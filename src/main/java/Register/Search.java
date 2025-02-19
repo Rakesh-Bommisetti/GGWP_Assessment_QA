@@ -14,6 +14,5 @@ public class Search extends Base {
 
     public void addToCart(){
         search("jeans");
-
     }
 }
