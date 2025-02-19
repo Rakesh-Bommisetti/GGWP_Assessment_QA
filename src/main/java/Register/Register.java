@@ -3,6 +3,8 @@ package Register;
 import Base.Base;
 import org.openqa.selenium.By;
 
+import java.util.concurrent.TimeUnit;
+
 public class Register extends Base {
     By registerLink=By.linkText("Register");
     By firstName = By.id("FirstName");
@@ -11,6 +13,7 @@ public class Register extends Base {
     By password = By.name("Password");
     By confirmPassword = By.name("ConfirmPassword");
     By registerButton = By.name("register-button");
+    By continueButton = By.xpath("//input[@value='Continue']");
 
     public void clickRegisterLink() throws Exception{
         try {
@@ -61,6 +64,13 @@ public class Register extends Base {
             findElement(registerButton).click();
             wait(5000);
         } catch (Exception e){
+            e.printStackTrace();
+        }
+
+        try{
+            driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+            findElement(continueButton).click();
+        }catch (Exception e){
             e.printStackTrace();
         }
     }
