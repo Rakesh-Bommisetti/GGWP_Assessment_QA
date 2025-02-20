@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]">
+  <test name="GGWP Assessment_QA(failed)" preserve-order="true">
+    <classes>
+      <class name="test.DemoWebsite">
+        <methods>
+          <include name="invokeBrowser"/>
+          <include name="Checkout"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- test.DemoWebsite -->
+    </classes>
+  </test> <!-- GGWP Assessment_QA(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

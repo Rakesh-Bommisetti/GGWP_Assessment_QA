@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="36945" started-at="2025-02-20T03:23:08Z" finished-at="2025-02-20T03:23:45Z">
+    <groups>
+    </groups>
+    <test name="GGWP Assessment_QA" duration-ms="36945" started-at="2025-02-20T03:23:08Z" finished-at="2025-02-20T03:23:45Z">
+      <class name="test.DemoWebsite">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:test.DemoWebsite@2ac1fdc4]" name="invokeBrowser" is-config="true" duration-ms="2848" started-at="2025-02-20T08:53:08Z" finished-at="2025-02-20T08:53:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="Register()[pri:0, instance:test.DemoWebsite@2ac1fdc4]" name="Register" duration-ms="8801" started-at="2025-02-20T08:53:11Z" finished-at="2025-02-20T08:53:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Register -->
+        <test-method status="PASS" signature="Search()[pri:0, instance:test.DemoWebsite@2ac1fdc4]" name="Search" duration-ms="14242" started-at="2025-02-20T08:53:20Z" finished-at="2025-02-20T08:53:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method status="PASS" signature="Checkout()[pri:0, instance:test.DemoWebsite@2ac1fdc4]" name="Checkout" duration-ms="10225" started-at="2025-02-20T08:53:34Z" finished-at="2025-02-20T08:53:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Checkout -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.DemoWebsite@2ac1fdc4]" name="closeBrowser" is-config="true" duration-ms="801" started-at="2025-02-20T08:53:44Z" finished-at="2025-02-20T08:53:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.DemoWebsite -->
+    </test> <!-- GGWP Assessment_QA -->
+  </suite> <!-- Default Suite -->
+</testng-results>
