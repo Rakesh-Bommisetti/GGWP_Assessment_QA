@@ -40,7 +40,7 @@ public class Register extends Base {
         }
 
         try {
-            findElement(email).sendKeys("nbkk@g.com");
+            findElement(email).sendKeys("nbkkk@g.com");
         } catch (Exception e){
             e.printStackTrace();
         }
