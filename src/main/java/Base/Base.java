@@ -31,9 +31,9 @@ public class Base {
 
         // To Open Chrome Browser
         if (prop.getProperty("browserName").matches("chrome")) {
-            System.setProperty("webdriver.chrome.driver", "E:\\chromedriver-win64\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "E:\\New folder (3)\\chromedriver-win64\\chromedriver.exe");
             ChromeOptions options = new ChromeOptions();
-            options.addArguments("--remote-allow-origins=*");
+            options.addArguments("--incognito");
             driver = new ChromeDriver(options);
         }
 
@@ -52,7 +52,7 @@ public class Base {
         driver.get(prop.getProperty(websiteURLKey));
     }
 
-    // Draws a red border around the found element. Does not set it back anyhow.
+    // Draws a red border around the found element.
     public WebElement findElement(By by) {
         WebElement element = driver.findElement(by);
         js = (JavascriptExecutor) driver;
@@ -66,15 +66,6 @@ public class Base {
         return element;
     }
 
-    // To submit Data in Corporate Wellness Page
-    public void submitData() throws InterruptedException {
-
-        By button = By.id("button-style");
-
-        WebElement submit = driver.findElement(button);
-        submit.click();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-    }
 
     // To print the Alerts
     public static void printAlert() {
@@ -87,6 +78,7 @@ public class Base {
         }
         alert.accept();
     }
+
 
     // To close the Browser
     public void closeBrowser() {

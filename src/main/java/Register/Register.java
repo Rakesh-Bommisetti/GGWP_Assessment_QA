@@ -2,8 +2,8 @@ package Register;
 
 import Base.Base;
 import org.openqa.selenium.By;
-
-import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
 
 public class Register extends Base {
     By registerLink=By.linkText("Register");
@@ -15,60 +15,59 @@ public class Register extends Base {
     By registerButton = By.name("register-button");
     By continueButton = By.xpath("//input[@value='Continue']");
 
-    public void clickRegisterLink() throws Exception{
+
+    public void clickRegisterLink() {
         try {
             findElement(registerLink).click();
             //wait(2000);
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
     }
 
-    public void details() throws Exception{
+    public void details() {
         try {
-            findElement(firstName).sendKeys("Rakesh");
-            wait(1000);
+            findElement(firstName).sendKeys("N");
+            wait.until(ExpectedConditions.visibilityOfElementLocated(lastName));
         } catch (Exception e){
             e.printStackTrace();
         }
 
         try {
             findElement(lastName).sendKeys("B");
-            wait(1000);
         } catch (Exception e){
             e.printStackTrace();
         }
 
         try {
-            findElement(email).sendKeys("rb@g.com");
-            wait(1000);
+            findElement(email).sendKeys("nbkk@g.com");
         } catch (Exception e){
             e.printStackTrace();
         }
 
         try {
             findElement(password).sendKeys("123456");
-            wait(1000);
+            wait.until(ExpectedConditions.visibilityOfElementLocated(continueButton));
         } catch (Exception e){
             e.printStackTrace();
         }
 
         try {
             findElement(confirmPassword).sendKeys("123456");
-            wait(1000);
         } catch (Exception e){
             e.printStackTrace();
         }
 
         try {
             findElement(registerButton).click();
-            wait(5000);
         } catch (Exception e){
             e.printStackTrace();
         }
 
+
         try{
-            driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+            wait.until(ExpectedConditions.visibilityOfElementLocated(continueButton));
+            Assert.assertEquals(findElement(By.xpath("//div[@class='result']")).getText(), "Your registration completed", "Page title does not match the expected value");
             findElement(continueButton).click();
         }catch (Exception e){
             e.printStackTrace();
