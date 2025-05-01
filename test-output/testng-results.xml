@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default Suite" duration-ms="36945" started-at="2025-02-20T03:23:08Z" finished-at="2025-02-20T03:23:45Z">
+  <suite name="Default Suite" duration-ms="46299" started-at="2025-03-07T11:13:28Z" finished-at="2025-03-07T11:14:14Z">
     <groups>
     </groups>
-    <test name="GGWP Assessment_QA" duration-ms="36945" started-at="2025-02-20T03:23:08Z" finished-at="2025-02-20T03:23:45Z">
+    <test name="GGWP Assessment_QA" duration-ms="46299" started-at="2025-03-07T11:13:28Z" finished-at="2025-03-07T11:14:14Z">
       <class name="test.DemoWebsite">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:test.DemoWebsite@2ac1fdc4]" name="invokeBrowser" is-config="true" duration-ms="2848" started-at="2025-02-20T08:53:08Z" finished-at="2025-02-20T08:53:11Z">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:test.DemoWebsite@5f150435]" name="invokeBrowser" is-config="true" duration-ms="6654" started-at="2025-03-07T16:43:28Z" finished-at="2025-03-07T16:43:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="Register()[pri:0, instance:test.DemoWebsite@2ac1fdc4]" name="Register" duration-ms="8801" started-at="2025-02-20T08:53:11Z" finished-at="2025-02-20T08:53:20Z">
+        <test-method status="PASS" signature="Register()[pri:0, instance:test.DemoWebsite@5f150435]" name="Register" duration-ms="9813" started-at="2025-03-07T16:43:35Z" finished-at="2025-03-07T16:43:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Register -->
-        <test-method status="PASS" signature="Search()[pri:0, instance:test.DemoWebsite@2ac1fdc4]" name="Search" duration-ms="14242" started-at="2025-02-20T08:53:20Z" finished-at="2025-02-20T08:53:34Z">
+        <test-method status="PASS" signature="Search()[pri:0, instance:test.DemoWebsite@5f150435]" name="Search" duration-ms="17617" started-at="2025-03-07T16:43:44Z" finished-at="2025-03-07T16:44:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search -->
-        <test-method status="PASS" signature="Checkout()[pri:0, instance:test.DemoWebsite@2ac1fdc4]" name="Checkout" duration-ms="10225" started-at="2025-02-20T08:53:34Z" finished-at="2025-02-20T08:53:44Z">
+        <test-method status="PASS" signature="Checkout()[pri:0, instance:test.DemoWebsite@5f150435]" name="Checkout" duration-ms="11043" started-at="2025-03-07T16:44:02Z" finished-at="2025-03-07T16:44:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Checkout -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.DemoWebsite@2ac1fdc4]" name="closeBrowser" is-config="true" duration-ms="801" started-at="2025-02-20T08:53:44Z" finished-at="2025-02-20T08:53:45Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.DemoWebsite@5f150435]" name="closeBrowser" is-config="true" duration-ms="1121" started-at="2025-03-07T16:44:13Z" finished-at="2025-03-07T16:44:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
