@@ -1,0 +1,5 @@
+Automation of the "https://demowebshop.tricentis.com/" with Java, Selenium and TestNG.
+Covered scenarios:
+1. Registrations validation
+2. Search validation
+3. Checkout process validation
